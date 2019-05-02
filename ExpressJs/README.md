@@ -1,4 +1,4 @@
-# Rest Api
+# Express JS
 
 # What is REST? </br>
 REST is acronym for REpresentational State Transfer. It is architectural style for distributed hypermedia systems and was first presented by Roy Fielding in 2000. </br>
@@ -8,12 +8,9 @@ Representational State Transfer (REST) is a software architectural style that de
 [Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)</br>
 ![Rest](https://github.com/musikito/REST_API/blob/master/img/rest.png)</br>
 
-# Routing 
-** Routing ** refers to how an application’s endpoints (URIs) respond to client requests. 
-[Basic Routing](https://expressjs.com/en/starter/basic-routing.html)
+# Routing
+** Routing ** refers to how an application’s endpoints (URIs) respond to client requests.
+[Basic Routing](https://expressjs.com/en/starter/basic-routing.html)</br>
 
-
-
-
-
-
+# Middleware
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers, etc.

@@ -16,4 +16,4 @@ JavaScript's two web stacks, MEAN and MERN. These frameworks are becoming increa
 [Vue](https://vuejs.org/)</br>
 
 
-Both of these stacks consist of open source components that provide an end-to-end framework for developing comprehensive web applications that connect browsers to databases. In both stacks, the common theme is JavaScript, allowing for one type of code and avoiding confusion or syntax errors.
+Both of these stacks consist of open source components that provide an end-to-end framework for developing comprehensive web applications that connect browsers to databases. In both stacks, the common theme is JavaScript, allowing for one type of code and avoiding confusion or syntax errors.</br>
