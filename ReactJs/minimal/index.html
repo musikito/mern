@@ -8,17 +8,41 @@
     <div id="root"></div>
     <script type="text/babel">
     
-    /* 
-    ADD REACT CODE HERE 
-    */
+   
     class Hello extends React.Component {
+        /*
+        Before we set the state, we have to call super() in the constructor. 
+        This is because this is uninitialized before super() has been called.
+        */
+        constructor(){
+            super();
+            this.state = {
+                message: "My friend(from state)!"
+
+            };//end of this
+            this.updateMessage = this.updateMessage.bind(this);
+            
+
+        }//end constructor
+
+        updateMessage(){
+            this.setState({
+                message: "My friend (from changed state)!"
+
+            });
+        }//end updateMessage
     render() {
-        return <h1>Hello world!</h1>;
+        return  (
+            <div>
+            <h1>Hello {this.state.message}!</h1>
+            <button onClick={this.updateMessage}>Click Me!</button>
+            </div>
+            )
     }
 }
 
 ReactDOM.render(
-    <Hello />, 
+    <Hello message="My friend" />, 
     document.getElementById("root")
 );
     
