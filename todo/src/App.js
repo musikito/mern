@@ -1,6 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+//import logo from './logo.svg';
 import './App.css';
+//import Tddo component here
+import Todo from './Todo';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      show:false
+    };
+  }
+  render(){
+    //use Todo component inside render method
+    return(
+      <div className="App"><Todo /></div>
+      
+    );
+  }
+}
+
+/*
 
 function App() {
   return (
@@ -22,5 +43,5 @@ function App() {
     </div>
   );
 }
-
+*/
 export default App;
