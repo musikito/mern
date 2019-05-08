@@ -9,7 +9,7 @@ class App extends Component {
       {
         id:1,
         title: "Do App",
-        completed: false
+        completed: true
       },
       {
         id:2,
@@ -17,7 +17,7 @@ class App extends Component {
         completed: false
       },
       {
-        id:1,
+        id:3,
         title: "Get Rich",
         completed: false
       }
