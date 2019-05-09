@@ -11,7 +11,7 @@ app.use(cors());
 const router = express.Router();
 
 //MongoDb address, could be local or hosted on Mlab, Atlas
-const dbRoute = "mongodb+srv://jmarte:Papiton%231@dict-h28av.mongodb.net/test?retryWrites=true";
+const dbRoute = "mongodb+srv://jmarte:Papiton%231@dict-h28av.mongodb.net/Dict?retryWrites=true";
 
 //connect our backend with the DB
 mongoose.connect(
@@ -37,6 +37,7 @@ app.use(logger("dev"));
 router.get("/getData",(req, res)=>{
     Data.find((err, data) => {
         if(err) return res.json({success: false, error: err});
+        console.log(data[0]);
         return res.json({success: true, data: data});
     })
 })
